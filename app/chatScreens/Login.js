@@ -5,7 +5,7 @@ import {
 	View,
 	TextInput,
 	Pressable,
-	Alert,
+	Alert
 } from "react-native";
 import { styles } from "../utils/styles";
 import AsyncStorage from "@react-native-async-storage/async-storage";
@@ -46,6 +46,7 @@ const Login = ({ navigation }) => {
 
 	return (
 		<SafeAreaView style={styles.loginscreen}>
+	
 			<View style={styles.loginscreen}>
 				<Text style={styles.loginheading}>Sign in</Text>
 				<View style={styles.logininputContainer}>

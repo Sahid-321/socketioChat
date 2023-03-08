@@ -1,13 +1,14 @@
-import { View, Text } from "react-native";
+import { View, Text, Image } from "react-native";
 import React from "react";
 import { Ionicons } from "@expo/vector-icons";
 import { styles } from "../utils/styles";
-
 export default function MessageComponent({ item, user }) {
 	const status = item.user !== user;
 
 	return (
 		<View>
+
+
 			<View
 				style={
 					status
@@ -16,12 +17,15 @@ export default function MessageComponent({ item, user }) {
 				}
 			>
 				<View style={{ flexDirection: "row", alignItems: "center" }}>
-					<Ionicons
+					{/* <Ionicons
 						name='person-circle-outline'
 						size={30}
 						color='black'
 						style={styles.mavatar}
-					/>
+					/> */}
+
+
+
 					<View
 						style={
 							status
@@ -29,7 +33,12 @@ export default function MessageComponent({ item, user }) {
 								: [styles.mmessage, { backgroundColor: "rgb(194, 243, 194)" }]
 						}
 					>
-						<Text>{item.text}</Text>
+
+						<Text >{item.text}
+
+						</Text>
+						
+
 					</View>
 				</View>
 				<Text style={{ marginLeft: 40 }}>{item.time}</Text>

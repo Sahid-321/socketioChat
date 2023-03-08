@@ -10,7 +10,7 @@ const Messaging = ({ route, navigation }) => {
 	const { name, id } = route.params;
 
 	const [chatMessages, setChatMessages] = useState([]);
-	const [message, setMessage] = useState("");
+	const [message, setMessage] = useState();
 
 	const getUsername = async () => {
 		try {
@@ -24,6 +24,7 @@ const Messaging = ({ route, navigation }) => {
 	};
 
 	const handleNewMessage = () => {
+		
 		const hour =
 			new Date().getHours() < 10
 				? `0${new Date().getHours()}`
@@ -36,12 +37,14 @@ const Messaging = ({ route, navigation }) => {
 
 		if (user) {
 			socket.emit("newMessage", {
+				
 				message,
 				room_id: id,
 				user,
 				timestamp: { hour, mins },
 			});
 		}
+		
 	};
 
 	useLayoutEffect(() => {
@@ -78,7 +81,7 @@ const Messaging = ({ route, navigation }) => {
 
 			<View style={styles.messaginginputContainer}>
 				<TextInput
-					style={styles.messaginginput}
+					style={styles.messaginginput} placeholder="Enter message"
 					onChangeText={(value) => setMessage(value)}
 				/>
 				<Pressable
