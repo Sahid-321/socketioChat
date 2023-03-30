@@ -7,3 +7,31 @@
 - Run `npm install`
 - Then start the server using `npm start`
 - Within the app, run `expo start --ios` to start the app via an IOS Emulator.
+
+<img
+src=“images/c1.jpeg”
+raw=true
+alt=“Subject Pronouns”
+style=“margin-right: 10px;”
+/>
+
+<img
+src=“images/c2.jpeg”
+raw=true
+alt=“Subject Pronouns”
+style=“margin-right: 10px;”
+/>
+
+<img
+src=“images/c3.jpeg”
+raw=true
+alt=“Subject Pronouns”
+style=“margin-right: 10px;”
+/>
+
+<img
+src=“images/c4.jpeg”
+raw=true
+alt=“Subject Pronouns”
+style=“margin-right: 10px;”
+/>
