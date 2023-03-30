@@ -8,12 +8,7 @@
 - Then start the server using `npm start`
 - Within the app, run `expo start --ios` to start the app via an IOS Emulator.
 
-<img
-src=“images/c1.jpeg”
-raw=true
-alt=“Subject Pronouns”
-style=“margin-right: 10px;”
-/>
+![Screenshot](image/c1.jpeg)
 
 <img
 src=“images/c2.jpeg”
