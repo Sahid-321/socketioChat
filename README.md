@@ -8,7 +8,7 @@
 - Then start the server using `npm start`
 - Within the app, run `expo start --ios` to start the app via an IOS Emulator.
 
-![Screenshot](images/c1.jpeg)
+![Test Image 3](\images\c1.jpeg)
 
 <img
 src=“images/c2.jpeg”
